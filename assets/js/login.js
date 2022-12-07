@@ -65,7 +65,7 @@ $(function () {
           return layer.msg('登录失败')
         }
         layer.msg('登录成功')
-        // 将登陆成功得到的 token 字符串，保存到 localStorage(本地存储) 中
+        // 将登陆成功得到的 token 字符串，保存到 localStorage(本地存储) 中 简单数据类型不用使用JSON存，如果是复杂数据类型就要转为JSON形式了
         localStorage.setItem('token', res.token)
         // 跳转到后台主页
         location.href = './index.html'
